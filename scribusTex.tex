@@ -1,0 +1,484 @@
+\documentclass[a4paper, 12pt]{book}
+%\usepackage{arsclassica}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\makeindex
+
+\usepackage{graphicx}
+\graphicspath{{img/}}
+
+\begin{document}
+Scribus
+Lavorare con il testo
+Lavorare con le immagini
+Stili dei paragrafi
+Stile di colore
+Strati e livelli
+Modelli e posizionamento
+Collegamenti e ancoraggi
+Esportare in PDF
+
+\section{Ringraziamenti}
+La seguente guida attinge dallo speciale realizzato da Ronnie Tucker in data giugno 2007 su Full Circle (http://fullcirclemagazine.org/) con licenza  licenza Creative Commons Attribuzione-Condividi. Rispetto ad essa il lavoro qui viene riorganizzato, ampliato  e corretto tenendo conto dell'ultima versione stabile del software Scribus (la 1.4.6)
+
+\section{Cosa si intende con desktop publishing}
+Con questo termine si intende l'insieme delle operazioni svolte al computer per la creazione, l'impaginazione e realizzazione di prodotti editoriali come libri, riviste, dépliant). Letteralmente il termine si può tradurre come “editoria da scrivania”, ma il termine più corretto in italiano sembra essere “tipografia digitale”. Sebbene si tratti di una disciplina nata negli anni novanta, e quindi relativamente giovane, essa è riuscita a rinnovare profondamente la tipografia, riducendo i tempi di prestampa (preparazione alla stampa) e permettendo impaginazioni elaborate.
+
+Il desktop publishing è strettamente legato all'uso di un personal computer e di un software adatto allo scopo. Le altre periferiche che completano la dotazione sono uno scanner per acquisire i testi e le immagini, una stampante per riprodurre il materiale editoriale e un monitor capace di mostrare fedelmente immagini e colori.
+
+Con il tempo è nata una nuova figura professionale, denominata “impaginatore grafico” o “grafico editoriale”, capace di comporre e correggere i testi, inserire simboli tipografici, utilizzare software di grafica bitmap e vettoriale e conoscere le varie fasi di stampa.
+
+\section{Panorama del software}
+Software libero
+Cenon
+DocBook
+LaTex
+Passepartout
+Scribus
+Troff
+
+Software proprietario
+Adobe InDesign
+Adobe PageMaker
+Corel Ventura
+Microsoft Publisher
+Pages
+
+\section{Scribus}
+In questo corso verrà preso in considerazione il software Scribus (https://www.scribus.net/) che si rivela interessante per numerosi motivi. Innanzitutto viene distribuito con licenza open source: questo non significa semplicemente che è gratuito, ma che il suo codice sorgente può essere analizzato e modificato dall'utente. Scribus è poi localizzato in diverse lingue (tra cui l'italiano), possiede un'interfaccia abbastanza amichevole, richiede poche risorse di sistema, funziona su tutti i principali sistemi operativi e permette la realizzazione di lavori editoriali dalla qualità semi-professionale.
+
+La prima schermata avviando Scribus mostra una pagina con le prime e più utilizzate opzioni. Particolare attenzione merita il riquadro centrale dove è possibile impostare il tipo di lavoro editoriale da sviluppare (dépliant su tre o quattro facciate per esempio), oppure scegliere un modello  tra quelli già esistenti (selezionando Nuovo da modello). Quest'ultima sezione è ricca di esempi preimpostati con biglietti da visita, newsletter, cartoline, presentazioni PDF e molto altro.
+
+Una volta effettuata una scelta, verrà visualizzata una pagina completamente bianca con due linee perimetrali: una più interna di colore “blu” ed una più esterna di colore “rosso”. Si tratta dei margini del nostro modello:
+
+\begin{itemize}
+	\item tutto ciò che si trova al di fuori del bordo rosso non verrà stampato
+	
+	\item tutto ciò che si trova tra la linea blu e quella rossa potrebbe non essere stampato correttamente, tagliando per esempio quello che si trova in tale area
+\end{itemize}
+
+\section{Inserire un testo}
+Una delle operazioni che si eseguiranno più spesso, sarà quella riguardante il testo, che sia un titolo che un vero e proprio articolo. Per inserire il nostro primo titolo, basterà cliccare sull'icona corrispondente del menu  (figura) e disegnare un riquadro sulla pagina premendo con il tasto sinistro del mouse. Questa operazione disegnerà solo la cornice che conterrà il nostro testo (figura). Per inserire quest'ultimo, basterà cliccare due volte su di esso per far apparire il cursore di “di inserimento testo”. Per terminare questa operazione basterà cliccare fuori dal riquadro precedentemente creato. 
+Il riquadro si può modificare nelle dimensioni e spostare a proprio piacimento (figura):
+
+\begin{itemize}
+	\item per modificare le dimensioni cliccare nel riquadro: apparirà un riquadro rosso con dei quadrati più evidenti lungo il perimetro. Tenendo premuti su questi quadrati e spostando il mouse, si potrà ridimensionare la cornice del testo
+
+	\item per spostare il riquadro selezionare la cornice dal testo: apparirà una icona a forma di mano che permetterà di spostare il riquadro (premendo il tasto sinistro del mouse e trascinando quest'ultimo)
+\end{itemize}
+
+Il testo appare però piccolo e probabilmente con un carattere non di proprio gusto. Si possono modificare questi aspetti andando nelle Proprietà (figura). Questa opzione è selezionabile in tre modi:
+
+\begin{itemize}
+	\item dal menu Finestre, quindi Proprietà
+
+	\item cliccando con il tasto destro del mouse sul riquadro del testo, quindi selezionando la voce Proprietà dal menu che compare
+
+	\item utilizzando una comoda scorciatoia da tastiera che prevede la selezione del riquadro di testo e la pressione del tasto F2 sulla tastiera
+\end{itemize}
+
+Nel menu Proprietà selezionare la voce del menu in basso denominata Testo: qui si avranno a disposizione molte opzioni per modificare il titolo, come il tipo di font (Arial è quello preimpostato), la grandezza del carattere (solitamente 12 punti), l'interlinea (la distanza tra le righe) o l'allineamento (figura). Altri sottomenu (Colore \& Effetti, Impostazioni stile, ecc) modificheranno il testo con effetti maggiormente elaborati.
+ 
+Nota: per apportare le modifiche desiderate, prima di tutto selezionare il testo e poi effettuare le modifiche.
+
+Personalizziamo per esempio il colore del nostro titolo, innanzitutto selezionando, poi andando su Proprietà, Testo; scegliere quindi il sottomenu Colore \& Effetti dove apparirà l'icona di un secchio per colorare il testo selezionato (figura). Il valore preimpostato è Black (nero) con una intensità del colore del 100% (valore sulla destra). Si può modificare il colore premendo sulla freccia alla destra del secchio, mentre variando il numero percentuale si renderà il colore più o meno intenso. I colori tra cui scegliere possono sembrare pochi, e in effetti è così, ma in seguito vedremo come aumentare il loro numero attraverso la definizione degli Stili. 
+Si noti che sotto l'icona del secchio si trovano altre piccole icone per personalizzare i caratteri, definendoli come apice, pedice, sottolineati, con ombra o una cornice (figura).
+
+\section{Dopo il titolo definiamo l'articolo}
+Ora che è stato realizzato un titolo più o meno accattivante, è necessario definire lo spazio per l'articolo vero e proprio. Il procedimento è identico a quello visto prima: si preme sull'icona Crea cornice di testo (o si preme il tasto T sulla tastiera) e si disegnano sotto il titolo due cornici larghe la metà del foglio e alte quanto la pagina (insomma quelle che in gergo si chiamano colonne) (figura). Come è facile immaginare, possiamo riempire queste due colonne con del testo scritto sul momento, incollato da un'altra fonte, oppure inserito automaticamente da Scribus. Per questa ultima possibilità, comoda se non si possiede un testo da inserire sul momento, basta muoversi con il mouse sopra la cornice di testo da riempire, premere il tasto destro del mouse e selezionare infine Testo di esempio (figura). La schermata successiva permetterà di inserire un numero di paragrafi (10 è il valore prefissato) in una lingua scelta. 
+
+Selezioniamo, come numero di paragrafi, il valore 4 e la nostra colonna si popolerà di altrettanti paragrafi di testo (figura). Ben presto però si noterà che questi non verranno visualizzati interamente per via della limitata grandezza della nostra cornice di testo. Scribus avvisa l'utente che la cornice non è sufficientemente grande (relativamente al testo inserito) mostrando un quadrato sbarrato nella cornice in basso a destra (figura). Per risolvere l'inconveniente si hanno differenti possibilità:
+
+\begin{itemize}
+	\item far continuare il testo su altre cornici di testo create per l'occasione
+
+	\item ridurre la quantità di testo
+
+	\item selezionare un carattere più piccolo
+\end{itemize}
+
+\section{Collegare le colonne}
+Esamineremo il primo caso, ovvero far si che il testo, troppo lungo per la nostra cornice, possa continuare su altre. Per far questo si usa l'icona Collega cornici di testo (scorciatoia N) (figura):
+
+\begin{itemize}
+	\item clicchiamo sulla cornice di partenza, ovvero quella sulla destra che contiene il testo di esempio
+
+	\item premiamo sull'icona Collega cornici di testo
+
+	\item clicchiamo infine sulla cornice di destinazione, ovvero quella da cui vogliamo trasferire il testo in eccesso
+\end{itemize}
+
+In questo modo, i paragrafi che non riuscivano ad essere visualizzati nella prima cornice, continueranno nella seconda colonna rispettando ovviamente l'ordine di composizione (figura). Dando un'occhiata alla prima colonna però si vedrà ancora in basso a destra il quadrato sbarrato, segnale che neppure con l'utilizzo di una seconda colonna, si è riusciti a visualizzare i quattro paragrafi. Come esercizio si possono provare a creare nuove cornici di testo e a ripetere le operazioni precedenti:
+\begin{itemize}
+	
+	\item creare nuove caselle di testo con l'icona apposita, oppure premendo sulla tastiera T
+
+	\item premere sulla nuova casella creata (quella dove far continuare il testo) e successivamente sull'icona Collega cornici di testo
+
+	\item selezionare la cornice di partenza (quella che non riesce a contenere tutti i paragrafi)
+\end{itemize}
+
+Come ci si poteva aspettare, il testo continua nella terza cornice (figura). I più attenti inoltre avranno notato, dopo aver premuto sull'icona Collega cornici di testo, la comparsa di una freccia tra le colonne di testo, per indicare appunto un collegamento profondo tra di esse (figura).
+
+\section{Dividere il testo in più colonne}
+Il paragrafo precedente ha mostrato come collegare le cornici di testo tra loro, creando un flusso di testo unico. Si tratta di un metodo non proprio intuitivo e particolarmente laborioso, ma permette di avere un controllo pressoché totale sul numero di colonne, sulla loro disposizione all'interno delle pagine, e molto altro. Se invece si volesse suddividere il testo su diverse colonne, ma le esigenze fossero più modeste, ci si può basare su un altro metodo che qui illustreremo con un esempio:
+
+\begin{itemize}
+	\item si crea una cornice di testo ampia quanto la larghezza della pagina
+
+	\item si riempe la cornice con un testo composto da diversi paragrafi (ci si può aiutare con l'inserimento automatico del testo di esempio)
+	\item una volta popolata la cornice con un articolo, si entra sulle sue Proprietà, Testo, Colonne\&Distanze del testo
+	
+	\item qui sono presenti varie opzioni con cui suddividere la cornice di testo in due o più colonne e regolare la loro distanza e il margine superiore e inferiore (figura)
+\end{itemize}
+
+Il risultato finale è soddisfacente e richiede pochi passaggi, ma limita la creatività di chi cura il layout del documento.
+
+\section{Personalizzare il testo: inserire un collegamento}
+Come dice la parola stessa, il collegamento (link) è un modo per creare un legame tra il proprio articolo è un'altra parte contenuta nello stesso documento o sul web. Si parla rispettivamente di collegamento interno ed esterno. 
+
+Prima di tutto selezioniamo sulla barra superiore, l'icona con due piedi (Inserisci annotazione collegamento) (figura), quindi, tenendo premuto il tasto sinistro del mouse, si descriva un rettangolo sul testo (o immagine)  dell'articolo che si vuole rendere un collegamento. Sulla pagina apparirà un quadrato con le “maniglie” con cui si potrà ingrandire/rimpicciolire o spostare l'area da rendere cliccabile. Ma a cosa “punta” il collegamento così creato? Al momento a nulla. Per impostare la destinazione, cliccare due volte all'interno del rettangolo del collegamento per visualizzare le proprietà e le relative opzioni (figura):
+
+\begin{itemize}
+	\item collegamento: rimanda ad una pagina specifica dell'attuale documento
+
+	\item collegamento esterno: effettua un collegamento ad una risorsa presente sul proprio disco fisso
+
+	\item collegamento Web esterno: permette di inserire un indirizzo web come collegamento esterno
+\end{itemize}
+
+Le opzioni si commentano da sole e risultano molto utili per rimandare il lettore verso altre risorse. Ci si raccomanda però di non esagerare con i link, perché non è piacevole durante la lettura di un testo “saltare” avanti e indietro tra le pagine. Si tenga anche inoltre conto che non tutti hanno a disposizione una connessione ad Internet per caricare i siti web esterni.
+
+Nota: si consiglia, quando si crea un collegamento, di modificare la formattazione del testo con un colore differente (solitamente blu) e sottolineato (figura). Una volta convertito il proprio lavoro editoriale in PDF (si veda la sezione seguente), si noterà infatti che i link non vengono visualizzati dal lettore PDF con un colore o una formattazione che li metta in evidenza: toccherà quindi a noi provvedere in tal senso.
+
+\section{Salvare e verificare il proprio lavoro}
+Un buon consiglio, valido sempre quando si lavora al computer, è quello di salvare spesso per evitare spiacevoli sorprese. Per memorizzare il frutto delle proprie fatiche, andare nel menu File e selezionare Salva Come nel formato SLA (scorciatoia CTRL+S) (figura). 
+Scribus, inoltre, prevede un controllo approfondito della formattazione della pagina quando si compiono delle precise operazioni e fornisce delle preziose indicazioni in fase di prestampa. Ricordate il testo di quattro paragrafi troppo lungo per essere visualizzato in due colonne? Bene, il suddetto controllo, nel nostro caso, ci indicherà per l'appunto che il testo non può essere visualizzato interamente. Questi consigli si possono anche ignorare, ma il risultato finale non sarà editorialmente soddisfacente (figura).
+Gli eventuali messaggi di errore appaiono quando si cerca di pubblicare il proprio lavoro. Per esempio:
+
+\begin{itemize}
+	\item si esporta il file in formato PDF o EPS: menu File, Esporta
+
+	\item si avvia la Stampa o si effettua una Anteprima di stampa
+
+\end{itemize}
+
+Per esportare invece nel formato PDF si utilizzare il menu File, Esporta nel formato PDF. Oppure si preme sull'icona nel menu superiore (figura). La scherma di esportazione in PDF mostra numerose opzioni:
+
+\begin{itemize}
+	\item per una migliore compatibilità con i lettori PDF, senza sacrificare la resa degli effetti, si consiglia di utilizzare la Compatibilità PDF 1.4 (Acrobat 5)
+
+	\item l'interessante opzione Intervallo di esportazione crea un PDF con tutte le pagine realizzate con Scribus, o solo con un loro intervallo, o singole pagine
+
+	\item Rotazione, come dice la parola stessa, vi permette di ruotate la pagine nel PDF esportato
+
+	\item L'opzione Risoluzione delle grafiche EPS è impostata sul valore predefinito di 300 dpi, ottimo se si vuole effettuare una stampa professionale. Se invece il proprio documento verrà visualizzato solo su schermo sarà sufficiente un valore di 150 dpi, cosa che ridurrà anche il “peso” del documento
+
+	\item Comprimi testo e grafiche vettoriali modifica notevolmente la dimensione del file, attraverso una compressione che in maniera predefinita è impostata su Automatico e la qualità su Massima. Anche in questo caso, se non si avesse la necessità di una stampa professionale di qualità, si può impostare la compressione su Senza perdita – ZIP
+
+	\item Nella scheda Font è consigliabile selezionare Incorpora tutti dalla casella Caratteri da incorporare. Se si utilizzano dei font particolari, non presenti su tutti i computer, il vostro documento non verrà visualizzato correttamente sugli altri sistemi, proprio perché mancherà il font da voi scelto. Per ovviare a questo problema, si può incorporare il font nel documento: peserà un po' di più, ma starete più tranquilli
+
+	\item la scheda Effetti imposta gli effetti di presentazione che però non vengono recepiti da tutti i lettori di PDF
+
+	\item la scheda Visualizzatore permette di scegliere come dovrà essere visualizzato il PDF su schermo. Formato documento imposta la visualizzazione come singola pagina o con due pagine per schermata. L'aspetto finale dipende comunque anche dal lettore PDF
+
+	\item la scheda Sicurezza fa in modo, come fa intendere il nome, di celare il proprio documento a chi non ha la vostra autorizzazione. Infatti è possibile criptare il file PDF con una password, impedire la stampa, la copia del testo
+
+	\item la scheda Colore ha l'opzione per scegliere “Tipografia” o “Scala di grigi”. Il più delle volte si usa l'opzione “Schermo/Web”
+
+	\item Pre-Stampa aggiunge le informazioni necessarie alle stampanti professionali, che non possono essere usate pienamente se non si attiva la gestione colori e non si usa PDF/X-3. Se non state usando una stampante di questo tipo, ignoratela
+
+\end{itemize}
+
+Dopo che aver passato al setaccio le opzioni, fare clic su "Salva" e si osservi il risultato finale. Sbizzarritevi a sperimentare sino a quando non sarete soddisfatti pienamente.
+
+In chiusura, tenete a mente alcuni consigli quando esportate i vostri documenti: 
+
+\begin{itemize}
+	\item non date all'utente la possibilità di impostare le opzioni, come le barre dei menù, per una presentazione poiché l'utente può facilmente ripristinarle di nuovo, magari facendo apparire brutto il vostro documento
+
+	\item è meglio evitare che il vostro documento vada a tutto schermo dato che alcuni visualizzatori di PDF non chiedono o non mandano un avvertimento. La cosa potrebbe spaventare i lettori quando i loro schermi diventeranno neri e scintillanti
+
+	\item la verifica preliminare è vostra amica: date ascolto ai suoi avvertimenti! Fate clic su un errore nella finestra di verifica e lei vi porterà alla pagina e vi farà notare cosa non va o dov'è collocato l'errore
+
+	\item pensate ai vostri lettori, se stanno guardando il vostro documento su un computer lento o su un vecchio portatile evitate di usare il formato a doppia pagina poiché le loro macchine potrebbero essere troppo vecchie per visualizzare velocemente due pagine alla volta
+\end{itemize}
+
+\section{Lavorare con le immagini}
+Presto o tardi dovrete incorporare nel vostro documento alcune immagini, ma non tutte sono uguali e vanno bene. Non parliamo tanto del loro valore artistico o semantico, ma del formato con cui esse vengono incorporate e quindi rappresentate. Partendo da una immagine senza difetti, questa può essere salvata in formato Jpeg, GIF, PNG, TIFF solo per citarne alcuni tra i più famosi. Ma cosa si nasconde dietro la parola “formato” e cosa comporta preferirne uno al posto di un altro. Si può incominciare partendo dal fatto che in passato era molto sentito il peso di una immagine, ovvero la quantità in byte che essa occupava su disco fisso. Le immagini possono occupare svariati megabyte (in alcuni casi anche gigabyte) e contenere questo aspetto era determinante quando i dischi fissi erano più costosi e meno capienti rispetto a quelli odierni. Sono nati per questo motivo degli algoritmi capaci di ridurre significativamente le dimensioni di una immagine al prezzo di una sua minor qualità e quindi fedeltà. Questi algoritmi non sono però tutti uguali e un loro utilizzo errato o eccessivo (valore di compressione) può portare alla produzione di artefatti, ovvero di difetti grossolani evidenti anche all'occhio umano. Gli artefatti possono essere descritti come dei piccoli quadrati antiestetici che compaiono dove il passaggio da un colore ad un altro dovrebbe apparire come graduale (figura).
+
+Questa introduzione è doverosa per lavorare al meglio con Scribus, ma potremmo estenderlo in realtà a qualsiasi software grafico. Sin qui dovrebbe essere chiaro che gli algoritmi di compressione delle immagini sono nati per ridurre la loro dimensione pagando però lo scotto di una conseguente minore qualità (degrado). Questo fattore in realtà non è un grande problema perché l'occhio umano lavora con una certa “approssimazione” e quindi può essere ingannato senza che si accorga dell'eventuale minor qualità dell'immagine. L'aspetto importante è applicare il giusto algoritmo al corretto tipo di immagine e non esagerare con il valore di compressione. Suona tutto molto tecnico e incomprensibile? Qualche esempio chiarirà meglio l'argomento.
+
+\section{Algoritmo Jpeg}
+Questo formato è nato per contenere la dimensione delle immagini fotografiche, ovvero con un'alta definizione e soprattutto con una grande quantità di colori (si parla di 16 milioni). L'occhio umano non nota che questo algoritmo elimina parte dei colori vicini, sempre che si scelga un fattore di compressione medio-basso. In caso contrario saranno evidenti degli artefatti.
+
+\section{Algoritmo GIF}
+Questo algoritmo si applica invece alle immagini che utilizzano massimo 256 colori. Non sono quindi utilizzate per immagini fotografiche, ma generalmente per loghi e semplici immagini per le pagine web. Un vantaggio di questo formato è quello di poter definire il colore di sfondo (canale alfa) come trasparente, creando quindi degli effetti artistici gradevoli sul web.
+
+\section{Algoritmo PNG}
+Questo formato è simile a quello GIF, quindi senza perdite di qualità, ma rispetto a quest'ultimo non è limitato ad una palette di 256 colori, ma può memorizzare immagini a 24 bit, quindi fotorealistiche.
+Nel settore dei prodotti editoriali si lavora generalmente con algoritmi che non comportano una diminuzione della qualità dell'immagine, quindi in questo contesto si preferirà essenzialmente il formato PNG.
+
+\section{Inserire un'immagine}
+Cliccare sull'icona Inserisci cornice immagine (scorciatoia I) (figura) e, premendo il tasto sinistro del mouse, disegnare un riquadro sullo schermo. A questo punto si potrà inserire l'immagine nel riquadro in diverse modi:
+
+\begin{itemize}
+	\item cliccando due volte con il mouse sul riquadro
+
+	item premendo la combinazione di tasti CTRL + I
+
+	\item scegliendo dal menu Inserisci, quindi Inserisci cornice immagine
+
+\end{itemize}
+
+Apparirà una finestra con la quale caricare un'immagine presente sul proprio disco fisso.
+
+\section{Adattare le dimensioni}
+Una volta caricata l'immagine, difficilmente questa apparirà correttamente su schermo. Potrebbero infatti verificarsi diverse situazioni:
+
+\begin{itemize}
+	\item l'immagine è più grande del riquadro precedentemente creato (figura)
+	
+	\item l'immagine è più piccola del riquadro
+
+	\item l'immagine non è ben centrata sullo schermo
+\end{itemize}
+
+A risolvere questi inconvenienti ci pensa Scribus permettendoci di adattare il riquadro all'immagine, o al contrario adattare quest'ultima alla cornice. Tutto dipende dal risultato finale che si vuole ottenere nell'impaginazione.
+
+\section{Adattare la cornice all'immagine}
+A volte si può preferire dare risalto all'immagine piuttosto che all'impaginazione stessa. In questo caso è sufficiente cliccare sulla cornice e premere su uno dei quadrati rossi che delimitano la figura esterna della cornice (figura). Tenendo premuto il pulsante sinistro del mouse si potrà ridimensionare a proprio piacimento il riquadro, con un controllo diretto sull'impaginazione finale (figura). Per ottenere un ridimensionamento che preservi il rapporto 1:1 basta mantenere premuto il tasto CTRL mentre si effettua l'operazione.
+
+Si può velocemente adattare la cornice all'immagine premendo con il tasto destro del mouse sull'immagine e selezionando dal conseguente menu la voce Adatta cornice all'immagine (figura). In questo modo la cornice verrà ridimensionata automaticamente dal programma in base all'immagine scelta.
+
+\section{Adattare l'immagine alla cornice}
+Quando invece è importante che l'immagine sia posizionata in un preciso punto della pagina e rispetti determinate dimensioni, allora è preferibile fare in modo che questa si adatti alla cornice. Come visto in precedenza, si può premere con il tasto destro del mouse sull'immagine per far apparire un menu con diverse opzioni da cui, questa volta, si selezionerà Adatta immagine alla cornice (figura).
+
+\section{Altre personalizzazioni}
+L'immagine inoltre può essere ovviamente posizionata sullo schermo semplicemente, trascinandola sullo schermo: premendo con il tasto sinistro del mouse sull'immagine, l'icona si trasformerà in una mano; tenendo poi sempre premuto il tasto sinistro e muovendo il mouse si sposterà agevolmente l'immagine (figura).
+
+Il pannello proprietà permette di avere un controllo maggiore sull'immagine stessa. Come visto in precedenza per la casella del testo, si può selezionare la cornice dell'immagine e premere il tasto F2, oppure il tasto destro del mouse, selezionando Proprietà (figura). La conseguente voce Immagine permetterà:
+
+\begin{itemize}
+	\item  scala libera, spostamento: scegliere con assoluta precisione la posizione X, e Y (PosX, PosY) sullo schermo (in pratica di quanti punti spostare l'immagine orizzontalmente e verticalmente)
+
+	\item scala libera, scala: ridimensionare l'immagine orizzontalmente e verticalmente
+	
+	\item adatta alla cornice: questa opzione, se scelta insieme a Proporzionale permette all'immagine di adattarsi alla cornice rispettando le corrette proporzioni
+
+	\item effetti immagine: aggiunge alcune effetti di post-produzione come sfocatura, scala di grigi, luminosità, ecc
+\end{itemize}
+	
+\section{Effetti immagine}
+Scribus presenta pochi, ma utili effetti grafici da applicare sulle immagini. Il loro scopo è fornire dei filtri per il trattamento delle foto senza dover aprire un programma specifico di grafica, come Gimp (https://www.gimp.org/). Gli effetti si possono applicare nei seguenti modi:
+
+\begin{itemize}
+	\item selezionando l'immagine, andando quindi su Proprietà, Immagine, Effetti immagine
+	
+	\item premendo sull'immagine con il tasto del mouse e selezionando dal menu Effetti immagine
+
+	\item utilizzando da tastiera la combinazione CTRL+ E
+\end{itemize}
+
+Spesso risultano utili gli effetti per regolare la luminosità, rendere più evidenti i contorni o applicare filtri complessi come quello che sfoca l'immagine o la rende bicromatica.
+
+\section{L'immagine sovrapposta al testo: la quota}
+Ogni cornice che si aggiunge in una pagina, sia che questa contenga del testo o una immagine, si sovrapporrà alla precedente. Scribus infatti lavora come se ci si trovasse con diversi fogli trasparenti che si sovrappongono. In questo caso si parla di livelli (layer in inglese) e di quota: ogni cornice assume un valore differente. Per consuetudine si assume che la cornice con testo assuma il valore di quota 1, mentre le cornici di immagini il valore di quota 2. Attenzione, perché Scribus assegna il valore di quota in maniera progressiva senza alcuna distinzione: se quindi definite prima un'immagine e poi un testo, questo assumeranno rispettivamente un valore di quota 1 e 2. In ogni momento è possibile modificare questo parametro selezionando la cornice desiderata, quindi Proprietà e successivamente X,Y,Z. Qui una apposita voce Quota permetterà di personalizzare il valore con la convenzione prima segnalata (il testo 1, le immagine 2) (figura).
+
+Nota: è sufficiente, in generale, che il testo abbia un valore di quota inferiore a quello delle immagini
+
+La quota di un testo o di una immagine, ma in genere di qualsiasi elemento, può essere quindi modificata in modo da evitare sovrapposizioni o per creare effetti grafici elaborati. Come visto in precedenza è possibile modificare la quota di ogni singolo elemento, prima selezionandolo e poi spostandosi su Proprietà, e poi su X,Y,Z (figura). Esistono però altri sistemi del tutto analoghi:
+
+\begin{itemize}
+	\item menu contestuale: cliccando con il tasto destro del mouse sull'elemento, selezionare Quota, Abbassa (oppure Alza)
+
+	\item menu principale: scegliere Elemento, Quota, Abbassa (oppure Alza)
+\end{itemize}
+
+Questa premessa è necessaria per introdurre un concetto fondamentale, ovvero far scorrere il testo intorno alla cornice dell'immagine, ed evitare così ogni sovrapposizione. Per fare ciò, è sufficiente selezionare la cornice dell'immagine, scegliere Proprietà (premendo F2 per esempio). Dal conseguente box di opzioni scegliere la scheda Forma, quindi Intorno alla forma cornice.
+
+Ora il testo scorre intorno all'immagine (che consigliamo di spostare sul testo per migliorare i ritorni a capo), ma esteticamente si può ancora fare di meglio. La spaziatura tra i bordi dell'immagine e il testo è decisamente marginale (figura). Anche questo aspetto può essere gestito agevolmente, semplicemente scegliendo per l'immagine Proprietà, quindi Forma e selezionando questa volta Intorno alla linea di contorno (figura). Con questa modifica indichiamo a Scribus che non vogliamo che il testo scorra intorno alla cornice, ma intorno ad una linea di contorno che verrà da noi definita liberamente. Dopo questa piccola modifica, nella stessa scheda Forma, selezionare Modifica. Si aprirà un nuova finestra, con numerose opzioni che per il momento possiamo tralasciare (figura). Qui si presti attenzione solamente alla voce Modificare la linea di contorno: selezioniamola e vedremo che l'immagine sarà caratterizzata da una linea di contorno di colore blu con i soliti quadrati. Agendo sui questi ultimi modificheremo la linea di contorno (generalmente si aumenta verso l'esterno)  con un conseguente maggiore spazio tra i margini dell'immagine e il testo. Quando si è soddisfatti del risultato, premere su Fine modifica. Decisamente meglio non credete?
+
+\section{Gli stili di paragrafo: definizione}
+Se si legge con un occhio attento un qualsiasi quotidiano o rivista, si nota uno “stile che accomuna” la stessa tipologia di articoli, con titoli per esempio realizzati con il medesimo carattere, dimensione, grassetto, italico ecc. Solitamente si pensa che queste modifiche/personalizzazioni siano fatte manualmente, caso per caso, ma non è così. Per semplificare il lavoro di formattazione di una pagina si utilizzano gli “stili di paragrafo” che non solo permettono di risparmiare molto tempo, ma evitano anche grossolani errori. Immaginate per esempio che i vostri articoli vengano realizzati sempre con le stesse impostazioni, per esempio:
+
+\begin{itemize}
+	\item carattere: arial
+
+	\item stile: grassetto (bold)
+
+	\item colore: nero (black)
+
+	\item interlinea: 15 punti
+
+	\item allineamento: giustificato
+	
+	\item spazio di paragrafo superiore: 1 punto
+\end{itemize}
+
+Si tratta solo di una minima parte di opzioni con cui è possibile personalizzare un articolo e come si può intuire, appare molto scomodo ripetere queste operazioni più volte. Ecco perché nascono gli stili di paragrafo (ma in generale tutti gli stili): memorizzare una serie di parametri per poi richiamarli facilmente e velocemente. Ecco che in questo modo sarà possibile creare degli stili comuni a tutti gli articoli che trattano una argomento comune come le vacanze, oppure i messaggi di compra-vendita, gli editoriali e così via.
+
+\section{Gli Stili: alcuni esempi}
+Gli stili di paragrafo sono vantaggiosi quando il proprio lavoro editoriale è composto da molti articoli ed è particolarmente complesso, ma in generale anche nelle piccole pubblicazioni mostrano tanti indubbi vantaggi. Capirne a fondo l'importanza è quindi fondamentale per realizzare delle riviste o libri dal sapore professionale. 
+
+All'interno di una rivista, si potrebbero voler creare degli stili  personalizzati per:
+
+\begin{itemize}
+	\item titolo dell'articolo
+
+	\item breve testo introduttivo
+
+	\item corpo dell'articolo
+
+	\item didascalie delle foto
+\end{itemize}
+
+\section{Gli stili di paragrafo: creazione}
+Per impostare il nostro primo stile, andare nel menu di Scribus e selezionare Modifica, Stili oppure si prema il tasto F3. Apparirà un pannello in cui impostare diversi tipi di stile: paragrafo, carattere e linea (figura). Al momento ci concentreremo sullo stile di paragrafo. Premiamo sul pulsante Nuovo, Stile di paragrafo e apparirà una nuova finestra ricca di opzioni che analizzeremo solo in parte:
+
+\begin{itemize}
+	\item nome: il primo aspetto importante è fornire al nostro stile un nome caratteristico che identifichi il tipo di articolo su cui per esempio verrà utilizzato
+
+	\item proprietà/stile carattere. Subito in basso appaiono due schede, la prima (proprietà) per impostare il paragrafo, la seconda (stile carattere) per personalizzare ogni minimo aspetto del font (colore, grandezza, tipo, ecc)
+\end{itemize}
+
+A questo punto si dia sfogo alla fantasia personalizzando per esempio l'interlinea (spazio tra due righe), il tipo di font, scegliendo grassetto o italico e modificando il colore e la grandezza. Non ci si preoccupi poi di qualche impostazione grossolana, perché il pulsante in basso Azzera permetterà di ritornare alla configurazione iniziale.
+
+Una volta realizzato uno stile, premiamo sul pulsante in basso Applica e poi su Fatto: ora il nuovo stile comparirà nella lista degli Stili di paragrafo pronto per essere applicato a qualsiasi articolo.
+
+Riprendiamo per esempio un articolo creato in precedenza, selezioniamolo, quindi scegliamo Proprietà, Testo, Impostazioni stile, e nel menu Stile di paragrafo scegliamo quello appena creato (figura). Si vedrà immediatamente che tutte le impostazioni precedentemente impostate come il tipo di carattere, la dimensione, il colore, verranno applicate in maniera omogenea a tutto l'articolo, facendoci risparmiare prezioso tempo.
+
+\section{Gli Stili: limitarsi ad un paragrafo}
+Precedentemente abbiamo selezionato una cornice di testo e applicato a tutto il testo in esso contenuto il nostro particolare stile. Ma il nome “stile di paragrafo” suggerisce ovviamente che tale stile si possa applicare anche ad un solo paragrafo, ovvero ad una porzione di testo compresa tra alcuni “ritorni a capo” (tasto INVIO).
+
+Per applicare lo stile ad un solo paragrafo, basta selezionare la cornice di testo, cliccare due volte all'interno e posizionare il cursore su un paragrafo (se non ne avete uno, createlo, aggiungendo alcuni ritorni a capo). Come visto in precedenza, andare su Proprietà, Testo, Impostazioni stile  e nel menu Stile di paragrafo scegliere quello desiderato (figura). Il risultato ora sarà differente: lo stile non sarà applicato a tutto il testo compreso nella cornice di testo, ma solo al paragrafo selezionato (figura).
+
+\section{Un altro vantaggio}
+Ammettiamo di aver applicato il nostro stile di paragrafo alla nostra rivista composta da decine di articoli e di voler cambiare, a lavoro finito, il carattere o la sua dimensione. Per fortuna, l'uso degli stili introduce anche un altro importante vantaggio: se si modifica successivamente uno stile, i suoi cambiamenti verranno applicati a tutte le sue “istanze”, ovvero alle porzioni di testo in cui è stato applicato. Quindi, ritornando all'esempio precedente, quello con una rivista con centinaia di articoli, se si volesse modificare il carattere, basterà andare nel menu Modifica, Stili e apportare le modifiche, per poi vederle aggiornate automaticamente in tutta la rivista.
+
+\section{Stili dei colori}
+Allo stesso modo con cui si realizzano gli stili di paragrafo è possibile creare quelli basati sui colori. Ovvero delle impostazioni comuni da applicare poi su box, linee, e così via. Siete alla pagina cinquanta della vostra rivista e volete che un'immagine abbia lo stesso stile e colore dell'immagine a pagina uno, ma non ricordate quale sia esattamente? Una possibilità è quella di scorrere o saltare a pagina uno, ma non risulterebbe più semplice avere una palette di colori tra cui scegliere e che sia sempre a disposizione?
+
+\section{Creiamo un colore}
+Clicchiamo sul menu Modifica, Colori e avremo una prima lista di colori predefiniti in Scribus: da cui è possibile eliminare quelli “inutilizzati” nel nostro documento, oppure crearne uno nuovo con l'apposito pulsante (figura). A seconda delle esigenze tipografiche che incidono poi sulla fedeltà del colore, è possibile selezionare come Modalità colore il valore RGB per Web, oppure quella professionale CMYK.
+
+Oltre a poter definire un nuovo colore, sarà possibile sceglierne uno dal menu in alto a destra dove sono presenti una nutrita lista di palette predefinite (figura). Una volta scelto un colore predefinito o averne impostato uno personalizzato, basterà dargli un Nome e premere sul pulsante OK (figura). Come per gli Stili di Paragrafo, se si si cambia un colore che è già stato utilizzato nel documento, tutte le sue istanze verranno aggiornate di conseguenza.
+
+\section{Creare un bordo e uno sfondo}
+Le immagini sin qui inserite nel progetto editoriale possono essere personalizzate con uno o più colori memorizzati nella lista Colori, a cui si può accedere dal menu Modifica, Colori (figura). Selezioniamo per esempio una qualsiasi immagine presente nel nostro documento e andiamo su Proprietà, Colori. Qui si potranno notare due icone:
+
+\begin{itemize}
+	\item un pennello: per impostare il colore del bordo dell'immagine. Nota: siccome ci si trova nelle proprietà dell'immagine, appare in sovrimpressione un bordo rosso. Cliccare sull'immagine per visualizzare il corretto colore del bordo impostato
+
+	\item un secchio: per riempire lo sfondo dell'immagine con un colore a scelta. Questa opzione funziona solo se nell'immagine è impostato un canale alfa (presente nelle immagini GIF e PNG)
+\end{itemize}
+	
+Altre opzioni utili, presenti sempre nella stessa finestra, sono:
+
+\begin{itemize}
+\item tonalità: per impostare la saturazione del colore (del bordo o dello sfondo)
+
+\item opacità: imposta la saturazione di tutta l'immagine e non solo del bordo o dello sfondo
+\end{itemize}
+
+\section{Ora personalizziamo!}
+Abbiamo giocato un po' con i colori, ma si potrebbero avere delle esigenze differenti e un po' più evolute, come per esempio cambiare lo spessore del bordo dell'immagine o personalizzare come questo apparirà su schermo. Il procedimento è semplice: selezionare l'immagine in cui abbiamo inserito il bordo, quindi scegliere Proprietà, Linea (figura).
+ 
+Qui troviamo le seguenti opzioni:
+
+\begin{itemize}
+	\item tipo di linea: permette di avere un bordo continuo, tratteggiato, punto-linea, ecc
+	
+	\item spessore linea: personalizza lo spessore del bordo
+
+	\item angoli: sceglie come si comporta il bordo negli angoli dell'immagine
+
+	\item estremità: se si utilizza un bordo non continuo, per esempio punto-linea, si possono personalizzare le estremità
+\end{itemize}
+
+Nota: spesso per accorgersi delle modifiche fatte, sarà necessario uscire dalle Proprietà dell'immagine ed effettuare uno zoom (tenendo premuto il tasto CTRL e muovendo la rotellina del mouse)
+
+\section{Inserire le forme}
+Possiamo rendere più vive le nostre pagine inserendo delle forme predefinite come quadrati, rettangoli triangoli o veri e propri poligoni. Il loro scopo è delimitare spazi dove inserire successivamente del testo o delle immagini (come per esempio un banner pubblicitario) o semplicemente rendere più gradevole una pagina.
+
+Le forme più comuni si realizzano andando sul menu principale: Inserisci, Forma e selezionando una tra quelle preimpostate, realizzando un poligono regolare, sbizzarrendosi con le curve di Bézier o disegnando a mano libera (figura). Nella nostro esempio abbiamo realizzato una corona circolare con un colore interno verde e un bordo di colore blu andando, come visto in precedenza, in Proprietà, Colori. Oppure in Proprietà, Linea si può scegliere un linea tratteggiata al posto di quella continua (figura).
+
+Invece le forme più elaborate, i poligoni, possono essere applicate al documento attraverso l'apposita icona nella barra superiore, oppure nel menu Inserisci, Inserisci poligono, Proprietà (figura). Nella finestra di configurazione si possono scegliere il numero di vertici del poligono, la sua rotazione e il Fattore con cui ottenere forme estremamente fantasiose.
+
+Chi lo desiderasse, all'interno delle forme, è possibile inserire del testo che si allineerà coerentemente con la forma geometrica disegnata. È sufficiente selezionare la forma in esame, poi premere il tasto destro del mouse e nel menu conseguente, scegliere Converti in, Cornice di testo (figura).
+
+Utilizzando, senza esagerare, colori, linee e forme è possibile rendere le pagine più vivaci spezzando la rigidità di certi prodotti editoriali composti da sole colonne di testo.
+
+\section{I tracciati e la rotazione del testo}
+Il testo può subire diverse trasformazioni. Per esempio può essere ruotato selezionando la cornice di testo, quindi spostandosi su Proprietà,Forma, Modifica e selezionando poi le icone per la rotazione in senso orario o antiorario (figura). L'effetto non è però convincente: ruota la cornice del testo e quindi i suoi margini, ma non la scritta vera e propria.
+
+Un modo di procedere più efficace, presuppone la “curva di Bézier”, una curva parametrica particolarmente utilizzata nei software di grafica. Essa in pratica permette di disegnare una o più curve con grande precisione e allo stesso tempo intuitività. Si consiglia di fare pratica con l'icona presente nel pannello in alto per disegnare una curva come quella mostrata in (figura)  dove è presente anche un testo. Il nostro scopo è quello di orientare la nostra scritta secondo la “curva di Bézier” descritta, comunemente chiamata “tracciato”. L'immagine finale mostra il risultato finale, più che soddisfacente (figura).
+
+Le operazioni per realizzare quanto visto è presto detto:
+descrivere una casella di testo da elaborare
+descrivere una curva di Bézier (tracciato) secondo cui si deve orientare il testo
+selezionare contemporaneamente il testo e la curva, tenendo premuto il tasto sinistro del mouse e descrivendo nel contempo un rettangolo di selezione. In questa fase è facile non riuscire a selezionare tutti gli elementi; questo perché il rettangolo di selezione non deve contenere il testo e la curva di Bézier, ma le rispettive cornici che li contengono. Queste ultime possono confondere l'utente, perché, se non selezionate, sono invisibili.
+una volta effettuata la selezione, selezionare nel menu principale la voce Elemento, Unisci testo a tracciato
+il risultato finale sarà il testo desiderato orientato secondo il tracciato
+In tutti i casi si può ripristinare il testo e il tracciato andando nel menu principale la voce Elemento, e scegliendo questa volta Separa testo da tracciato
+
+\section{I livelli}
+Tutti i programmi di grafica più avanzati permettono di lavorare con i livelli, conosciuti anche come layer. Si possono immaginare come fogli trasparenti sovrapposti su cui è possibile disegnare, scrivere, in maniera ordinata e indipendente l'uno dall'altro. Scopo dei livelli è quello di raggruppare gli elementi secondo delle caratteristiche comuni, creando, per esempio un livello comune a tutti i testi degli articoli, uno invece per lo sfondo colorato della rivista, uno per le foto e per le didascalie. Certamente un prodotto editoriale come un giornale può essere composto da un solo livello, ma questo porterebbe anche a degli svantaggi:
+minor ordine
+pesantezza grafica
+impossibilità di nascondere gli elementi indesiderati
+I livelli hanno un'importante caratteristica: possono essere in ogni momento disabilitati con tutti gli elementi che racchiudono. Per esempio, nella realizzazione di un libro di centinaia di pagine, illustrazioni, foto, didascalie, potrebbe essere comodo disabilitare (nascondere) il livello del testo, per concentrarsi solo sulla parte grafica, o viceversa. Nascondere poi i livelli diventa una necessità nei lavori editoriali più complessi, perché troppo elementi visualizzati tutti insieme su schermo, rallentano il programma e conseguentemente anche il lavoro di editing.
+Lista dei livelli
+Scribus per impostazione predefinita possiede un solo livello, definito come Sfondo (background). È possibile accedere ai livelli in diversi modi:
+barra dei livelli (si trova nella parte inferiore del programma): lo scopo è quello di muoversi velocemente tra i livelli
+menu principale: è ricco di opzioni e lo si trova andando su Finestre, Livelli
+La finestra dei livelli (accessibile dal menu) permette di scorrere tra i livelli creati, aggiungere, eliminare, o duplicare uno qualsiasi (figura). Inoltre, come visto con le “quote degli oggetti”, è possibile alzare o abbassare il livello, in maniera che possa sovrapporsi o meno con altri elementi.
+Clicchiamo sul pulsante Nuovo (con l'icona +) e creiamo un nuovo livello a cui daremo il nome Livello2 (figura). Ora qualsiasi elemento di testo o grafico inserito nella nostra pagina, verrà aggiunto automaticamente su questo livello. Realizziamo una cornice di testo e una forma (un rettangolo) assicurandoci di aver selezionato prima Livello2: questa forma apparterà al nuovo livello.  In ogni momento è possibile scegliere su quale livello creare i nuovi elementi, semplicemente selezionandolo prima.
+Ora che è stato creato un nuovo livello e sono stati aggiunti alcuni  elementi, possiamo comprendere meglio i vantaggi dati dal loro utilizzo. La finestra per la loro gestione presenta alcune icone:
+occhio: utilizzata per visualizzare/nascondere un livello e tutto quello che contiene
+stampante: su schermo il livello verrà visualizzato, ma non comparirà nel documento stampato
+lucchetto: blocca o meno l'accesso al livello e inibisce per questo l'editing
+Spostare un elemento in un livello
+Ogni elemento nella pagina, che sia un testo, una forma o un'immagine può essere assegnata ad uno dei livelli eventualmente creati. Il procedimento è intuitivo:
+si seleziona l'oggetto in esame
+si seleziona nel menu principale Elemento, Invia al livello
+si sceglie il nuovo livello a cui assegnare l'oggetto
+Modelli e pagine mastro: introduzione
+Come visto per gli “stili dei colori” è conveniente creare anche delle impostazioni comuni per le pagine, in modo da non doverle creare più volte. I modelli delle pagine, vengono solitamente definiti come Pagine Mastro.
+Iniziamo aggiungendo al nostro lavoro altre due pagine. Andiamo sul menu Pagina, Inserisci e selezioniamo il numero di pagine (2) e in quale posizione devono essere aggiunte (in fondo) (figura). Per visualizzare le pagine in un'unica schermata e farsi un'idea della loro progressione, basta posizionare il mouse sulla schermata principale di Scribus e muovere la rotellina del mouse  tenendo premuto il tasto CTRL. Si vedranno così le pagine incolonnate poiché il documento iniziale è impostato come Singola facciata. In ogni momento è possibile modificare questa impostazione per adattarlo al prodotto editoriale che si desidera realizzare:
+libro: due facciate
+dépliant: tre o quattro facciate
+Per modificare il tipo di facciata andare nel menu File, Impostazioni documento e alla voce Documento scegliere per esempio Doppia facciata.  Sempre nella stessa schermata, impostare la voce La prima pagina è sul valore Destra. Spostarsi poi su Informazioni documento per aggiungere le informazioni relative all'autore e al documento. Terminare le modifiche scegliendo Applica e quindi Ok. 
+Ora le nostre pagine non saranno più visualizzare lungo una singola colonna, ma verranno rappresentate a doppia facciata (sinistra e destra) come un vero e proprio libro o rivista. Si noti che la prima pagina viene visualizzata a destra, da sola: questo avviene perché Scribus automaticamente la identifica come la copertina (a rivista chiusa). Le successive pagine appaiono su schermo come se la rivista fosse aperta, quindi con una facciata sinistra e destra affiancate.
+La prima pagina Mastro
+Ora che è stato impostato un documento a doppia facciata, cerchiamo di capire cosa rappresenta una pagina Mastro. Come detto in precedenza, con questo termine si intende un modello, ovvero una raccolta di stili grafici che è possibile creare, modificare e applicare ad ogni pagina del nostro documento. Per esempio, due pagine affiancate potrebbero avere elementi grafici che si estendono dalla pagina di sinistra a quella di destra creando così una composizione grafica comune. La pagina Mastro può essere utilizzata per creare anche pagine singole forme geometriche come sfondo, da salvare e utilizzare successivamente. 
+Creiamo la prima pagina Mastro andando su Modifica, Pagine mastro. La nuova, piccola finestra visualizzerà alcune icone utili per creare rispettivamente una nuova pagina mastro, duplicarla, importarla o eliminarla. 
+Al momento esiste una sola pagina mastro: Normale. Clicchiamo sulla prima icona e creiamo una nuova pagina mastro con il nome Nuova Pagina mastro 1 e nella schermata principale aggiungiamo per esempio alcune forme geometriche come una freccia, un rettangolo, una circonferenza (menu: Inserisci, forma) e rendiamole trasparenti. 
+Chiudiamo la finestra piccola e ritorniamo al nostro documento che non mostra in realtà alcuna modifica. Questo perché  il nostro lavoro ha utilizzato la pagina Mastro predefinita (Normale) e non quella appena creata. 
+Selezioniamo quindi una delle pagine del nostro documento con il mouse e premiamo il tasto destro del mouse: dal menu selezionare Applica pagina mastro e scegliere Nuova Pagina mastro, quindi confermare premendo su Ok. 
+Ora la nostra nuova pagina conterrà, se presente, il testo di eventuali articoli e foto, ma mostrerà anche un modello grafico (layout) personalizzato. Quello che deve essere chiaro, è che le pagine mastro non modificano alcun contenuto editoriale (testo, foto, livelli), ma determinano solo l'aspetto della pagine. Proprio in virtù di questa osservazione, e tenendo conto che sulle pagine mastro si sovrapporranno il testo e le immagini degli articoli, è bene non esagerare con elementi grafici che potrebbero rendere poco leggibile il testo. È anche consigliato rendere gli oggetti delle pagine mastro trasparenti e utilizzare colori poco vivaci.
+Pagina mastro: le guide
+Sino ad ora ci siamo limitati a creare delle pagine mastro con alcune forme trasparenti, ma è possibile spingerci oltre, realizzando delle linee guide, che vanno ad influenzare per esempio il numero di colonne (o righe) presenti in una pagina. Una rivista, per esempio, ha un testo che si sviluppa su più colonne a differenza di un libro. Scegliere Modifica, pagine Mastro e poi cliccare con il testo destro sulla pagina e selezionare Gestione linee guida.
+Qui si impostano le linee guida a cui agganciarci e tutto il testo. Configuriamo una pagina con tre colonne: scegliamo la scheda Colonna/Riga e impostiamo il valore 2 nella voce Verticali: due linee verticali divideranno infatti la pagina in tre parti uguali. Spostiamoci poi su Utilizza Distanza dove si inseriremo un valore di 30: questo numero determina una distanza tra le colonne di 30 punti.
+Inseriamo ora una linea orizzontale lungo la pagina, a circa un terzo della sua altezza, in modo da inserirvi gli elementi della testata. Scegliamo, sempre in Gestione guide, la scheda Singole e selezioniamo Orizzontali, Aggiungi, dando un valore di 200 punti. In questo modo abbiamo inserito una sola guida orizzontale, ad una distanza verticale di 200 punti dal margine superiore della pagina. Per terminare le modifiche sulle pagine guide, premere su Applica a tutte le pagine. 
+A questo punto torneremo al programma principale dove le linee guida “potrebbero” risultare nascoste. Se questo dovesse accadere, basta andare sul menu principale e selezionare Viste, Mostra guide per visualizzarle correttamente.
+Se si vuole che gli oggetti si aggancino (o saltino e si allineino) alle guide appena create, cliccare su Pagina, Aggancia alle guide.
+Pagina mastro: numerazione delle pagine
+A questo punto potrebbe essere comodo inserire la numerazione delle pagine della propria rivista. Si tratta di un'operazione che si può svolgere manualmente, ma oltre ad essere ripetitiva, cosa succederebbe se una volta completata la numerazione del proprio lavoro, ci si accorgesse di voler aggiungere o cancellare un articolo? Ebbene sì, se questo dovesse accadere, sarà anche necessario cambiare la numerazione di tutte le pagine! Questa e altre operazioni, per nostra fortuna, possono essere automatizzate tramite la creazione della pagina mastro.
+Andiamo su Modifica, Pagine mastro e clicchiamo sulla pagina in cui si vuole inserire la numerazione automatica. Inseriamo una cornice di testo, e clicchiamo due volte al suo interno, solo che questa volta non inseriremo un testo. 
+Scegliamo dal menu principale: Inserisci, Carattere, Numero di pagina. Ora, dopo aver chiuso la finestra della pagine mastro, si noterà che il proprio documento mostrerà automaticamente la numerazione automatica, che verrà rispettata anche se si dovesse aggiungere o cancellare nel frattempo un articolo. Ovviamente anche il numero che identifica la pagina può essere formattato con il carattere, dimensione e colore desiderato: basta selezionarlo e andare su Proprietà, Testo.
+Avere una visione di insieme
+Nei lavori più complessi, le pagine possono aumentare esponenzialmente, così come le immagine, le didascalie e gli elementi grafici più disparati. Può essere quindi utile fruire di uno schema essenziale ma schematico di quanto realizzato.
+Vediamo quanto appena detto nel dettaglio, spostandoci sul menu principale e selezionando Finestre, Schema Documento. Si aprirà una piccola finestra che elencherà le pagine Mastro, ma soprattutto le singole pagine e ogni elemento in esse presente. 
+l'utente cliccando sul nome del singolo elemento può rinominarlo con uno più specifico e intuitivo
+Scribus inoltre, una volta che si seleziona un elemento nella finestra Schema Documento, rimanda automaticamente allo stesso nel documento principale
+
+
+
+
+
+
+	
+\end{document}
